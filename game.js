@@ -33,6 +33,12 @@ function setupGame() {
             token: pdata[i-1]
         }
     }
+
+    // Create tokens.
+    for (let i = 1; i <= playercount; i++) {
+        let board = document.getElementById("board");
+        board.innerHTML += `<img src="images/tokens/${playerdata[i].token}.svg" alt="P${i}" class="token" id="player${i}token">`;
+    }
 }
 
 // Actually run the game setup.
@@ -70,7 +76,6 @@ function displayBills(player=1) {
 
     // Get the bills.
     let bills = playerdata[player].money;
-    console.log(bills);
 
     // Store what bill we are on for positioning.
     let currentBill = 0;
@@ -128,8 +133,24 @@ function displayBills(player=1) {
         moneyDisp.innerHTML += gimmeMoney(500, currentBill / billcount);
         currentBill ++;
     }
-
-    console.log(moneyDisp);
 }
 
 displayBills(1);
+
+// Draw players.
+function movePlayer(player=1, position=0) {
+
+}
+
+async function takeTurn(who=1) {
+
+    let promise = new Promise((resolve, reject) => {
+    setTimeout(() => resolve("done!"), 1000)
+    });
+
+    let result = await promise; // wait until the promise resolves (*)
+
+    alert(result); // "done!"
+}
+
+takeTurn();
