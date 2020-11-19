@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    border: 2px solid black;
+    padding: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+
+    color: black;
+
+    margin: 0 auto;
+
+    margin: 2px;
+
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+.header {
+    background: #ff2525;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+h1 {
+    padding-left: 0.4em;
+}
+
+.gamerules {
+    padding: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    margin: 0 auto;
+}
+
+input, button, select {
+    outline: none;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: none;
+    font-size: 1.3em;
+    background-color: white;
+
+    text-transform: uppercase;
+}
+
+button {
+    margin-left: 43%;
+
+    transition: all 0.1s;
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+button:active {
+    background-color: lightslategray;
+}
+
+#playersetup {
+    height: 200px;
+    overflow-y: scroll;
+}
+
+hr {
+    border-color: black;
+    background-color: black;
+}

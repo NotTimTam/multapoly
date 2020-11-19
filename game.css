@@ -1,0 +1,85 @@
+html {
+    overflow: hidden;
+}
+
+.board {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    border: 15px solid skyblue;
+    padding: 2px;
+
+    width: 80vh;
+    height: 80vh;
+
+    padding: 0;
+}
+
+.board img {
+    width: 100%;
+    height: 100%;
+}
+
+input, button {
+    outline: none;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: none;
+    font-size: 1.3em;
+    background-color: white;
+
+    text-transform: uppercase;
+}
+
+button {
+    margin-left: 43%;
+
+    transition: all 0.1s;
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+button:active {
+    background-color: lightslategray;
+}
+
+/* Money */
+.moneydisplay {
+    position: absolute;
+
+    width: 300px;
+    height: 200px;
+
+    left: 0;
+    top: 100%;
+}
+
+.bill {
+    transition-property: all;
+    transition-duration: 0.5s;
+
+    width: calc(239.969px * 1.5);
+    height: calc(115.469px * 1.5);
+
+    transform: rotate(-90deg);
+
+    position: absolute;
+    top: 0;
+}
+
+.bill:hover {
+    transform: rotate(-90deg) translateX(150px);
+}
+
+.bill:focus {
+    transform: rotate(0deg) translateY(-500px);
+    outline: none;
+}
