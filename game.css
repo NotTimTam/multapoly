@@ -1,5 +1,6 @@
 html {
     overflow: hidden;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .board {
@@ -9,8 +10,6 @@ html {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
     border: 15px solid skyblue;
     padding: 2px;
@@ -86,4 +85,67 @@ button:active {
 .bill:focus {
     transform: rotate(0deg) translateY(-500px);
     outline: none;
+}
+
+/* TOKENS */
+.token {
+    position: absolute;
+
+    max-width: 32px;
+    max-height: 32px;
+    padding: 5px;
+
+    box-sizing: border-box;
+
+    background-color: red;
+
+    border-radius: 2em;
+
+    transition-property: all;
+    transition-duration: 0.5s;
+
+    top: 100%;
+    left: 100%;
+}
+
+/* TOKEN COLORS */
+
+.red {
+    background: radial-gradient(circle at 30% 30%, #ffb0b0, #ff0000, #000);
+    color: white;
+}
+
+.orange {
+    background: radial-gradient(circle at 30% 30%, #ffc59f, #ED553B, #000);
+}
+
+.yellow {
+    background: radial-gradient(circle at 30% 30%, #fff2c5, #F6D55C, #000);
+}
+
+.green {
+    background: radial-gradient(circle at 30% 30%, #e0fffc, #3CAEA3, #000);
+}
+
+.blue {
+    background: radial-gradient(circle at 30% 30%, #88c1f0, #20639B, #000);
+    color: white;
+}
+
+.purple {
+    background: radial-gradient(circle at 30% 30%, #80b1da, #173F5F, #000);
+    color: white;
+}
+
+.pink {
+    background: radial-gradient(circle at 30% 30%, #ffeeee, #ffb0b0, #000);
+}
+
+.white {
+    background: radial-gradient(circle at 30% 30%, #FFFFFF, #FFFFFF, #000000);
+}
+
+.black {
+    background: radial-gradient(circle at 30% 30%, #a3a3a3, #1b1b1b, #000000);
+    color: white;
 }
